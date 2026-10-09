@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102c72"><meta name="description" content="THE SPECIAL ONE — English exams for primary and preparatory students, sponsored by Mr. Sameh Abdel Hafeez.">
+<title>THE SPECIAL ONE | بوابة الامتحانات</title>
+<style>
+:root{--navy:#102c72;--blue:#2765d6;--gold:#ffd44f;--text:#18315a;--soft:#eef4ff}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 10% 10%,#d5eaff,transparent 32%),linear-gradient(150deg,#f1f7ff,#fff9e6 65%,#ffeef4);color:var(--text);font-family:Tahoma,'Segoe UI',Arial,sans-serif;min-height:100vh}header{background:linear-gradient(120deg,#102c72,#2374d9);text-align:center;color:white;padding:25px 14px 34px;border-bottom:8px solid var(--gold);box-shadow:0 10px 28px #12357530}.brand{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap}.brand img{width:94px;height:94px;object-fit:contain;border-radius:20px;background:#ffffff19;padding:5px;box-shadow:0 3px 18px #061c5350}h1{font-size:clamp(31px,7vw,58px);line-height:1.1;letter-spacing:1px;color:var(--gold);margin:0;text-shadow:2px 3px #071c50}header p{margin:9px 0 0;font-size:clamp(13px,2.6vw,19px)}main{max-width:1060px;margin:-12px auto 0;padding:0 16px 36px}.intro{background:white;padding:19px;border-radius:20px;text-align:center;box-shadow:0 8px 28px #14376b18;margin:25px auto}.intro strong{color:#0f51ac}.stage{margin:27px 0}.stage h2{font-size:23px;margin:0 0 15px;display:flex;gap:9px;align-items:center}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card{background:#fff;border:2px solid #e2eafa;border-radius:20px;padding:20px 16px;box-shadow:0 6px 20px #13346b13;display:flex;flex-direction:column;gap:11px;transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-3px);border-color:#96baf9}.card .emoji{font-size:35px}.card h3{margin:0;font-size:19px}.card .small{font-size:12px;color:#65748d;min-height:17px}.btn{border:0;background:linear-gradient(110deg,#215bc8,#3489e9);color:white;border-radius:12px;display:block;text-align:center;padding:12px 8px;font-weight:bold;text-decoration:none;font-size:15px;cursor:pointer}.btn:hover{filter:brightness(1.06)}.btn.disabled{background:#e6ebf4;color:#7c8ca5;cursor:default}.badge{display:inline-block;background:#e7f8ec;color:#16763b;padding:5px 9px;border-radius:10px;font-size:12px;font-weight:bold;width:max-content}.badge.wait{background:#fff4db;color:#906019}footer{text-align:center;padding:25px;color:#536782;font-size:13px}.note{margin-top:20px;background:#fff8de;border:1px solid #f5df92;padding:13px 17px;border-radius:15px;font-size:13px;line-height:1.9}@media(max-width:700px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.brand img{width:68px;height:68px}.card{padding:15px 12px}.card h3{font-size:16px}}@media(max-width:370px){.grid{grid-template-columns:1fr}}:focus-visible{outline:3px solid #ffb82c;outline-offset:3px}
+</style>
+</head>
+<body><header><div class="brand"><img src="prep1/special-one-logo.png" alt="THE SPECIAL ONE logo"><div><h1>THE SPECIAL ONE</h1><p>Sponsored by Mr. Sameh Abdel Hafeez</p></div></div><p>بوابة امتحانات اللغة الإنجليزية | اختار صفك وابدأ التحدي 🌟</p></header>
+<main><div class="intro"><strong>Welcome, Super Student! 🚀</strong><div>اختر صفك الدراسي، ثم اضغط على «ابدأ الامتحان» — بالتوفيق يا بطل!</div></div>
+<section class="stage"><h2>🎒 المرحلة الابتدائية</h2><div class="grid" id="primary"></div></section>
+<section class="stage"><h2>🎓 المرحلة الإعدادية</h2><div class="grid" id="prep"></div></section>
+<div class="note">📌 الامتحانات المتاحة حاليًا: مراجعة أكتوبر للصفوف الرابع والخامس والسادس الابتدائي، والأول والثاني والثالث الإعدادي. امتحانات أولى وثانية وثالثة ابتدائي ستُضاف لاحقًا. عند إضافة امتحانات جديدة، ستظهر روابطها في هذه البوابة بعد تحديث قائمة الامتحانات.</div>
+</main><footer>© 2026 THE SPECIAL ONE · Sponsored by Mr. Sameh Abdel Hafeez</footer>
+<script>
+'use strict';
+// EXAM CATALOG: each exam keeps its own stable URL and Exam ID.
+// When additional exams are published, add them here; do not overwrite older exams.
+const EXAMS = [
+ {grade:'4',id:'P4-OCT-2026',name:'مراجعة أكتوبر · Units 1–3',url:'grade4/'},
+ {grade:'5',id:'P5-OCT-2026',name:'مراجعة أكتوبر · Units 1–3',url:'grade5/'},
+ {grade:'6',id:'P6-OCT-2026',name:'مراجعة أكتوبر · Units 1–3',url:'grade6/'},
+ {grade:'prep1',id:'PREP1-OCT-2026',name:'مراجعة أكتوبر · Units 1–3',url:'prep1/'},
+ {grade:'prep2',id:'PREP2-OCT-2026',name:'مراجعة أكتوبر · Units 1–3',url:'prep2/'},
+ {grade:'prep3',id:'PREP3-OCT-2026',name:'مراجعة أكتوبر · Units 1–3',url:'prep3/'}
+];
+const PRIMARY=['الأول','الثاني','الثالث','الرابع','الخامس','السادس'];
+const PREP=['الأول','الثاني','الثالث'];
+function build(id,stage,names){
+ const target=document.getElementById(id);
+ names.forEach((label,i)=>{
+  const grade=stage==='primary'?String(i+1):'prep'+(i+1);
+  const exams=EXAMS.filter(x=>x.grade===grade);
+  const card=document.createElement('article');card.className='card';
+  const icon=document.createElement('span');icon.className='emoji';icon.textContent=stage==='primary'?'📚':'🏅';card.append(icon);
+  const title=document.createElement('h3');title.textContent='الصف '+label+' '+(stage==='primary'?'الابتدائي':'الإعدادي');card.append(title);
+  const badge=document.createElement('span');badge.className='badge'+(exams.length?'':' wait');badge.textContent=exams.length?`${exams.length} امتحان متاح`:'قريبًا';card.append(badge);
+  if(!exams.length){const msg=document.createElement('span');msg.className='btn disabled';msg.textContent='قريبًا — انتظر الامتحان';card.append(msg)}
+  else exams.forEach(ex=>{const desc=document.createElement('div');desc.className='small';desc.textContent=ex.name;card.append(desc);const a=document.createElement('a');a.className='btn';a.href=ex.url;a.textContent='ابدأ الامتحان ←';a.setAttribute('aria-label','ابدأ '+ex.name+' للصف '+label);card.append(a)});
+  target.append(card);
+ });
+}
+build('primary','primary',PRIMARY);build('prep','prep',PREP);
+</script></body></html>
